@@ -83,7 +83,7 @@ function onEscKeyPress(event) {
 
 function onArrowKeyPress(event) {
   let index = +refs.lightboxImage.dataset.index;
-  if (event.code === "ArrowRight" && index <= gallery.length) {
+  if (event.code === "ArrowRight" && index <= gallery.length - 1) {
     refs.lightboxImage.src = gallery[index + 1].original;
     refs.lightboxImage.dataset.index = index + 1;
   }
